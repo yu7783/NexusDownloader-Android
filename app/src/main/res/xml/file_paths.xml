@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FileProvider が公開するパス。アプリ専用の外部ストレージのみを対象にする。 -->
+<paths>
+    <external-files-path name="downloads" path="Download/" />
+    <external-files-path name="external_files" path="." />
+    <files-path name="internal_files" path="." />
+    <cache-path name="cache" path="." />
+</paths>

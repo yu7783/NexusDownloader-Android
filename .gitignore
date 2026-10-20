@@ -1,0 +1,33 @@
+# --- Android / Gradle ビルド成果物 ---
+*.iml
+.gradle/
+.kotlin/
+/.idea/
+/build
+/app/build/
+build/
+app/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+/local.properties
+local.properties
+*.hprof
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# --- 署名鍵（絶対にコミットしない） ---
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+
+# --- 一時ファイル / スクリーンショット ---
+.DS_Store
+Thumbs.db
+_ktlist.txt
+_shot*.png
+.screenshots/
+*.log

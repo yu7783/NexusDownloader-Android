@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nexus Downloader</string>
+
+    <!-- ボトムナビゲーション -->
+    <string name="nav_downloads">ダウンロード</string>
+    <string name="nav_addons">アドオン</string>
+    <string name="nav_settings">設定</string>
+    <string name="nav_about">情報</string>
+
+    <!-- ダウンロード画面 -->
+    <string name="downloads_title">ダウンロード</string>
+    <string name="downloads_subtitle">URL を貼り付けて保存。共有やコピーからも取り込めます。</string>
+    <string name="downloads_url_label">URL（複数は改行区切り）</string>
+    <string name="downloads_paste">貼り付け</string>
+    <string name="downloads_detect_addon">検出: %1$s</string>
+    <string name="downloads_no_addon">対応するアドオンが見つかりません（直リンク以外はスキップされます）</string>
+    <string name="downloads_options_title">ダウンロード設定</string>
+    <string name="downloads_button">ダウンロード</string>
+    <string name="downloads_add_to_queue">キューに追加</string>
+    <string name="downloads_pause">一時停止</string>
+    <string name="downloads_resume">再開</string>
+    <string name="downloads_cancel_all">すべて中止</string>
+    <string name="downloads_overall_progress">全体の進捗  %1$d%%</string>
+    <string name="downloads_overall_progress_batch">（%1$d/%2$d 件）</string>
+    <string name="downloads_paused_label">一時停止中</string>
+    <string name="downloads_queue">キュー（%1$d）</string>
+    <string name="downloads_queue_pending">キュー（待機 %1$d 件 / 全体 %2$d）</string>
+    <string name="downloads_clear_finished">完了を消す</string>
+
+    <!-- タスクカード -->
+    <string name="task_status_queued">待機中</string>
+    <string name="task_status_queued_position">待機中 #%1$d</string>
+    <string name="task_status_running">進行中</string>
+    <string name="task_status_completed">完了</string>
+    <string name="task_status_failed">失敗</string>
+    <string name="task_status_skipped">スキップ</string>
+    <string name="task_status_canceled">中止</string>
+    <string name="action_move_top">先頭へ</string>
+    <string name="action_cancel_one">1 件だけ中止</string>
+    <string name="action_open">開く</string>
+    <string name="action_share">共有</string>
+    <string name="action_retry">再試行</string>
+    <string name="action_remove">削除</string>
+    <string name="action_close">閉じる</string>
+
+    <!-- クリップボード提案 -->
+    <string name="clipboard_title">コピーしたリンクがあります</string>
+    <string name="clipboard_use">取り込む</string>
+
+    <!-- アプリ内のメッセージ -->
+    <string name="msg_shared_url_input">共有された URL を入力しました</string>
+    <string name="msg_already_queued">すでにキューに入っています</string>
+    <string name="msg_added_to_queue">キューに追加しました</string>
+    <string name="msg_paused">一時停止しました（通知や画面の「再開」で続きから）</string>
+    <string name="msg_resumed">再開しました</string>
+    <string name="msg_canceled_one">1 件を中止しました</string>
+    <string name="msg_prioritized">キューの先頭へ移動しました</string>
+    <string name="msg_retry_started">再試行を開始しました</string>
+    <string name="msg_clipboard_empty">クリップボードが空です</string>
+    <string name="msg_no_app_open">開けるアプリが見つかりませんでした</string>
+    <string name="msg_no_app_share">共有できるアプリが見つかりませんでした</string>
+
+    <!-- 設定 -->
+    <string name="settings_title">設定</string>
+    <string name="settings_appearance">外観</string>
+    <string name="settings_theme">テーマ</string>
+    <string name="theme_system">システム</string>
+    <string name="theme_light">ライト</string>
+    <string name="theme_dark">ダーク</string>
+    <string name="settings_dynamic_color">ダイナミックカラー</string>
+    <string name="settings_dynamic_color_desc">OS の壁紙に合わせた配色（Android 12+）</string>
+    <string name="settings_accent_color">アクセントカラー</string>
+    <string name="settings_downloads">ダウンロード</string>
+    <string name="settings_parallel">並列数: %1$s</string>
+    <string name="settings_parallel_auto">自動</string>
+    <string name="settings_timeout">タイムアウト（秒）</string>
+    <string name="settings_mobile">モバイル</string>
+    <string name="settings_wifi_only">Wi-Fi 接続時のみ</string>
+    <string name="settings_wifi_only_desc">モバイル通信でのダウンロードを防止します。</string>
+    <string name="settings_share_auto">共有から自動ダウンロード</string>
+    <string name="settings_share_auto_desc">共有時のオプション画面を下の秒数後に自動で開始します（オフなら手動で開始）。</string>
+    <string name="settings_notify_complete">完了時に通知</string>
+    <string name="settings_notify_complete_desc">ダウンロードが終わったら通知を表示します。</string>
+    <string name="settings_clipboard_suggest">クリップボードの URL を提案</string>
+    <string name="settings_clipboard_suggest_desc">コピーしたリンクをダウンロード画面でワンタップ入力できます。</string>
+    <string name="settings_save_location">保存先</string>
+    <string name="save_location_choose_folder">フォルダを選ぶ</string>
+    <string name="save_location_reset">既定に戻す</string>
+    <string name="save_location_tree_desc">完了したファイル / フォルダは選択したフォルダへ移動します。</string>
+    <string name="save_location_app_desc">未選択のときは下のアプリ専用フォルダへ保存します（任意のフォルダを選ぶと完了後にそこへ移動）。</string>
+    <string name="save_location_subdir">サブフォルダ名（空なら直下）</string>
+    <string name="save_location_subdir_hint">「/」で区切ると階層を作れます（例: 動画/2026）。</string>
+    <string name="save_location_external">外部ストレージ</string>
+    <string name="save_location_internal">内部ストレージ</string>
+    <string name="save_location_app_folder">アプリ専用フォルダ</string>
+    <string name="save_location_selected">選択したフォルダ</string>
+    <string name="save_location_selected_named">選択したフォルダ（%1$s）</string>
+    <string name="settings_share_seconds">自動開始までの秒数</string>
+    <string name="settings_share_seconds_desc">ポップアップを開いてから自動で開始するまでの待ち時間（1〜600 秒）。</string>
+    <string name="settings_share_seconds_off">「共有から自動ダウンロード」を ON にすると使えます。</string>
+    <string name="settings_engine">エンジン</string>
+    <string name="settings_checking">確認中...</string>
+    <string name="settings_engine_desc">同梱の yt-dlp はビルド時点のものです。更新すると YouTube などの取得失敗（403）を解消できます。</string>
+    <string name="settings_updating">更新中...</string>
+    <string name="settings_update_ytdlp">yt-dlp を最新版に更新</string>
+    <string name="settings_stats">これまでの実績</string>
+    <string name="settings_stats_count">%1$d 件</string>
+    <string name="settings_stats_total">累計 %1$s</string>
+    <string name="settings_reset">リセット</string>
+    <string name="settings_failed">失敗</string>
+    <string name="settings_failed_count">%1$d 回</string>
+    <string name="settings_shared">共有から取り込み</string>
+    <string name="settings_shared_count">%1$d 回</string>
+    <string name="settings_badges">実績バッジ</string>
+    <string name="settings_badges_earned">%1$d / %2$d 獲得</string>
+    <string name="settings_earned">獲得済み</string>
+    <string name="settings_security">セキュリティ</string>
+    <string name="settings_blocked_keywords">ブロックする危険キーワード（1 行 1 語）</string>
+    <string name="settings_blocked_desc">取り込むアドオン定義に含まれると拒否します。</string>
+    <string name="settings_restore_default">既定に戻す</string>
+    <string name="settings_setup_title">セットアップ</string>
+    <string name="settings_replay_setup">セットアップをもう一度見る</string>
+    <string name="settings_replay_setup_desc">次回の起動で初回セットアップを表示します。</string>
+    <string name="settings_setup_show">表示</string>
+
+    <!-- アドオン画面 -->
+    <string name="addons_title">アドオン</string>
+    <string name="addons_subtitle">内蔵アドオンと、ローカルの定義ファイルから追加したアドオン。</string>
+    <string name="addons_import">ファイルから追加</string>
+    <string name="addons_format">書式</string>
+    <string name="addons_builtin">内蔵</string>
+    <string name="addons_imported">外部</string>
+    <string name="addons_json_title">アドオン定義（JSON）</string>
+    <string name="addons_default_description">任意の直リンクを保存</string>
+    <string name="msg_addon_read_failed">ファイルを読み込めませんでした</string>
+    <string name="msg_addon_import_failed">取り込みに失敗しました: %1$s</string>
+    <string name="msg_addon_deleted">%1$s を削除しました。</string>
+    <string name="msg_addon_delete_failed">削除できませんでした（内蔵アドオンは削除不可）。</string>
+
+    <!-- 情報画面 -->
+    <string name="about_title">情報</string>
+    <string name="about_tagline">本体を汚さず拡張できる汎用ダウンローダーの Android 版。</string>
+    <string name="about_tagline2">動画・画像・直リンクの並列ダウンロード、内蔵アドオン、</string>
+    <string name="about_tagline3">ローカルの定義ファイルによる追加に対応します。</string>
+    <string name="about_features">主な機能</string>
+    <string name="about_feature_parallel">複数 URL の並列ダウンロード（Coroutines）</string>
+    <string name="about_feature_addons">内蔵アドオン: yt-dlp / Iwara / 画像ギャラリー / 直リンク</string>
+    <string name="about_feature_import">ローカルファイルからのアドオン追加と危険コード走査</string>
+    <string name="about_feature_theme">ダイナミックカラーとライト/ダークテーマ</string>
+    <string name="about_feature_ytdlp">yt-dlp + ffmpeg による多彩なサイト対応</string>
+    <string name="about_mobile">スマホ向けの便利機能</string>
+    <string name="about_mobile_share">共有メニューから URL を送信（Morphe YT / ブラウザ / SNS など）</string>
+    <string name="about_mobile_clipboard">クリップボードの URL をワンタップで取り込み</string>
+    <string name="about_mobile_notify">ダウンロード完了の通知</string>
+    <string name="about_mobile_wifi">Wi-Fi 接続時のみダウンロード</string>
+    <string name="about_mobile_open">保存したファイルをその場で「開く / 共有」</string>
+    <string name="about_credits">クレジット</string>
+    <string name="about_author">作者: %1$s</string>
+    <string name="about_license">ライセンス: %1$s</string>
+    <string name="about_homepage">ホームページ: %1$s</string>
+    <string name="about_storage">保存先</string>
+    <string name="about_storage_desc1">アプリ専用の Download フォルダ配下に保存されます。</string>
+    <string name="about_storage_desc2">設定の「保存先」で変更できます。</string>
+    <string name="about_storage_desc3">Android 11+ のスコープドストレージに準拠しています。</string>
+
+    <!-- 共有ポップアップ -->
+    <string name="share_title">ダウンロード設定</string>
+    <string name="share_shared_url">共有された URL</string>
+    <string name="share_shared_url_count">共有された URL（%1$d 件）</string>
+    <string name="share_no_addon">対応するアドオンが見つかりません（スキップされます）</string>
+    <string name="share_options_note_first">設定は先頭の URL に適用されます。</string>
+    <string name="share_queued_ahead">現在 %1$d 件を処理中 / 待機中です。この URL はその後ろに並びます。</string>
+    <string name="share_auto_start">%1$d 秒後に自動で開始します</string>
+    <string name="share_cancel">キャンセル</string>
+    <string name="share_start">ダウンロード開始</string>
+    <string name="share_chooser_title">共有</string>
+
+    <!-- 通知 -->
+    <string name="notif_channel_downloads">ダウンロード</string>
+    <string name="notif_channel_downloads_desc">ダウンロードの完了を通知します</string>
+    <string name="notif_channel_progress">ダウンロードの進行状況</string>
+    <string name="notif_channel_progress_desc">進行中のダウンロードと残り時間を表示します</string>
+    <string name="notif_action_pause">一時停止</string>
+    <string name="notif_action_resume">再開</string>
+    <string name="notif_action_cancel">中止</string>
+    <string name="notif_title_downloading">ダウンロード中</string>
+    <string name="notif_title_downloading_index">ダウンロード中 (%1$d/%2$d)</string>
+    <string name="notif_title_paused">一時停止中</string>
+    <string name="notif_text_default">ダウンロードしています</string>
+    <string name="notif_text_paused">再開できます</string>
+    <string name="notif_text_paused_more">残り %1$d 件 · 再開できます</string>
+    <string name="notif_text_remaining">残り約 %1$s</string>
+    <string name="notif_text_pending">待機 %1$d 件</string>
+    <string name="notif_completed_title">ダウンロード完了</string>
+    <string name="notif_badge_title">%1$s 実績解除: %2$s</string>
+    <string name="time_under_second">1 秒未満</string>
+    <string name="time_seconds">%1$d 秒</string>
+    <string name="time_minutes">%1$d 分</string>
+    <string name="time_hours">%1$d 時間</string>
+
+    <!-- ダウンロード処理 -->
+    <string name="dl_no_addon">対応するアドオンがありません</string>
+    <string name="dl_waiting">待機中</string>
+    <string name="dl_wifi_only">Wi-Fi 接続時のみ実行する設定です</string>
+    <string name="dl_analyzing_playlist">プレイリストを解析中...</string>
+    <string name="dl_playlist_failed">プレイリストの解析に失敗しました</string>
+    <string name="dl_addon_missing">アドオンが見つかりません</string>
+    <string name="dl_starting">開始中...</string>
+    <string name="dl_completed">完了</string>
+    <string name="dl_completed_moved">完了（保存先フォルダへ移動）</string>
+    <string name="dl_failed">失敗</string>
+    <string name="dl_paused_hint">一時停止中（再開で続きから）</string>
+    <string name="dl_canceled">中止しました</string>
+    <string name="dl_retrying">再試行します...</string>
+    <string name="dl_connecting">接続中...</string>
+    <string name="dl_progress_percent_mb">ダウンロード中 %1$s%% (%2$s/%3$s MB)</string>
+    <string name="dl_progress_mb">ダウンロード中 %1$s MB</string>
+    <string name="dl_empty_response">レスポンスが空です</string>
+    <string name="iwara_fetch_info">動画情報を取得中...</string>
+    <string name="iwara_no_info">動画情報を取得できませんでした</string>
+    <string name="iwara_no_file_url">fileUrl を取得できませんでした</string>
+    <string name="iwara_no_sources">動画ソース一覧を取得できませんでした</string>
+    <string name="iwara_id_not_found">Iwara の動画 ID を URL から抽出できません: %1$s</string>
+    <string name="iwara_connecting">接続中... (%1$s)</string>
+    <string name="iwara_no_source_selected">動画ソースを選択できませんでした</string>
+    <string name="iwara_no_download_url">ダウンロード URL を取得できませんでした</string>
+    <string name="gallery_analyzing">ページを解析中...</string>
+    <string name="gallery_no_images">画像を 1 枚も検出できませんでした</string>
+    <string name="gallery_progress">ダウンロード中 %1$d/%2$d 枚</string>
+    <string name="momonga_fetch_page">ページ情報を取得中...</string>
+    <string name="momonga_scanning">画像 URL を探索中...</string>
+    <string name="momonga_scanning_found">画像 URL を探索中... %1$d 枚</string>
+    <string name="momonga_circle">サークル</string>
+    <string name="momonga_circle_name">サークル名</string>
+    <string name="ytdlp_merging">ファイルを結合中...</string>
+    <string name="ytdlp_video_progress">映像をダウンロード中 %.1f%%</string>
+    <string name="ytdlp_audio_progress">音声をダウンロード中 %.1f%%</string>
+    <string name="ytdlp_progress_eta">%1$s (残り %2$d 秒)</string>
+    <string name="ytdlp_run_failed">yt-dlp の実行に失敗しました</string>
+    <string name="ytdlp_retrying">一時的なエラーのため再試行します (%1$d/%2$d)...</string>
+    <string name="ytdlp_playlist_failed">プレイリストの解析に失敗しました</string>
+    <string name="ytdlp_login_hint">%1$s\n\nヒント: ログインが必要な動画です。ダウンロード設定の「ログイン」で「Cookiesファイル」（Netscape 形式 cookies.txt）または「IDとパスワード」を指定してください。</string>
+    <string name="ytdlp_init">yt-dlp を初期化中...</string>
+    <string name="ytdlp_checking">yt-dlp の更新を確認中...</string>
+    <string name="ytdlp_updated">yt-dlp を更新しました</string>
+    <string name="ytdlp_latest">yt-dlp は最新です</string>
+    <string name="ytdlp_checked">yt-dlp を確認しました</string>
+    <string name="ytdlp_update_failed">yt-dlp の更新に失敗しました</string>
+    <string name="ytdlp_update_failed_reason">yt-dlp の更新に失敗しました: %1$s</string>
+
+    <!-- アドオン / セキュリティ -->
+    <string name="addon_install_rejected">インストール拒否: %1$s</string>
+    <string name="addon_parse_failed">アドオン定義の解析に失敗しました: %1$s</string>
+    <string name="addon_id_empty">アドオン ID が空です。</string>
+    <string name="addon_no_patterns">URL パターンが 1 つも指定されていません。</string>
+    <string name="addon_added">%1$s を追加しました。</string>
+    <string name="security_blocked">危険な記述が検知されました: \'%1$s\'</string>
+
+    <!-- 内蔵アドオンの表示テキスト -->
+    <string name="addon_ytdlp_desc">yt-dlp エンジン。多数の動画/音声サイトに対応し、ログインにも対応します。</string>
+    <string name="addon_iwara_desc">Iwara 公式 API を使い、選択した画質の動画を保存します。</string>
+    <string name="addon_manga_desc">作品ページから画像を一括ダウンロードします（静的 HTML サイト対応）。</string>
+    <string name="addon_momonga_desc">作品ページから同一作品の画像を一括ダウンロードします。</string>
+    <string name="addon_direct_desc">http/https の直リンク（動画/画像/ファイル）をそのまま保存します。</string>
+    <string name="opt_quality">画質</string>
+    <string name="opt_quality_desc">動画の最大解像度。audio only は音声のみを取得します。</string>
+    <string name="opt_format">拡張子</string>
+    <string name="opt_format_desc">出力コンテナ / 音声フォーマット。</string>
+    <string name="opt_audio_bitrate">音質</string>
+    <string name="opt_audio_bitrate_desc">音声のみ / mp3 出力時のビットレート。</string>
+    <string name="opt_login">ログイン</string>
+    <string name="opt_login_desc">ログインが必要な動画（ニコニコの年齢制限など）で使用します。</string>
+    <string name="opt_playlist">プレイリスト</string>
+    <string name="opt_playlist_desc">プレイリスト URL のとき、含まれる動画を 1 本ずつキューへ追加します。</string>
+    <string name="opt_cookies_path">Cookiesファイル のパス</string>
+    <string name="opt_cookies_path_desc">Netscape 形式 cookies.txt のパス（空ならアプリ専用領域の cookies.txt）。</string>
+    <string name="opt_username">ログインID</string>
+    <string name="opt_username_desc">「IDとパスワード」選択時に入力します。</string>
+    <string name="opt_password">パスワード</string>
+    <string name="opt_password_desc">入力値は保存されません。</string>
+    <string name="opt_2fa">2段階認証コード</string>
+    <string name="opt_2fa_desc">必要な場合のみ入力します。</string>
+    <string name="opt_iwara_quality_desc">Source=オリジナル最高画質 / preview=短いプレビュー。</string>
+    <string name="opt_workers">並列数 (画像取得)</string>
+    <string name="opt_workers_desc">画像を同時に取得する数。多すぎるとブロックされることがあります。</string>
+    <string name="choice_playlist_all">リスト全体</string>
+    <string name="choice_playlist_first">最初の1件のみ</string>
+    <string name="choice_login_none">なし</string>
+    <string name="choice_login_cookies">Cookiesファイル</string>
+    <string name="choice_login_credentials">IDとパスワード</string>
+    <string name="choice_audio_only">audio only</string>
+
+    <!-- 実績バッジ -->
+    <string name="badge_first_title">はじめの一歩</string>
+    <string name="badge_first_desc">初めてのダウンロードを完了する</string>
+    <string name="badge_regular_title">常連さん</string>
+    <string name="badge_regular_desc">ダウンロードを 10 件完了する</string>
+    <string name="badge_heavy_title">ヘビーユーザー</string>
+    <string name="badge_heavy_desc">ダウンロードを 50 件完了する</string>
+    <string name="badge_master_title">達人の域</string>
+    <string name="badge_master_desc">ダウンロードを 100 件完了する</string>
+    <string name="badge_1mb_title">1 MB クラブ</string>
+    <string name="badge_1mb_desc">累計 1 MB を保存する</string>
+    <string name="badge_1gb_title">1 GB クラブ</string>
+    <string name="badge_1gb_desc">累計 1 GB を保存する</string>
+    <string name="badge_10gb_title">10 GB クラブ</string>
+    <string name="badge_10gb_desc">累計 10 GB を保存する</string>
+    <string name="badge_100gb_title">100 GB アーカイブ</string>
+    <string name="badge_100gb_desc">累計 100 GB を保存する</string>
+    <string name="badge_share_title">共有デビュー</string>
+    <string name="badge_share_desc">他アプリの共有から URL を取り込む</string>
+    <string name="badge_share_master_title">共有マスター</string>
+    <string name="badge_share_master_desc">共有から 25 回取り込む</string>
+
+    <!-- 初回セットアップ -->
+    <string name="onboarding_skip">スキップ</string>
+    <string name="onboarding_next">次へ</string>
+    <string name="onboarding_start">はじめる</string>
+    <string name="onboarding_welcome_title">Nexus Downloader へようこそ</string>
+    <string name="onboarding_welcome_body">動画・画像・直リンクを保存できる汎用ダウンローダーです。複数の URL をまとめて並列ダウンロードできます。</string>
+    <string name="onboarding_share_title">共有からダウンロード</string>
+    <string name="onboarding_share_body">Morphe YT・ブラウザ・SNS などからリンクを共有し、ポップアップで設定するだけでバックグラウンドで保存が始まります。元のアプリにすぐ戻れます。</string>
+    <string name="onboarding_queue_title">キューとバックグラウンド</string>
+    <string name="onboarding_queue_body">ダウンロード中でも URL を追加できます。通知から一時停止 / 再開でき、Android 16 以降では残り時間をライブ更新で表示します。</string>
+    <string name="onboarding_storage_title">保存先を選ぶ</string>
+    <string name="onboarding_storage_body">設定で任意のフォルダを選ぶと、完了したファイルはそこへ移動します。未選択のときはアプリ専用フォルダに保存します。</string>
+    <string name="onboarding_permission_title">通知を許可</string>
+    <string name="onboarding_permission_body">バックグラウンドでダウンロードしている間、進捗と残り時間を通知で確認できます。</string>
+    <string name="onboarding_permission_button">通知を許可する</string>
+    <string name="onboarding_permission_granted">通知は許可されています</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 実体の色は Compose の Material3 テーマが担当する。
+         ここは起動時のスプラッシュ/背景がちらつかないための最小定義。 -->
+    <style name="Theme.NexusDownloader" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/nexus_window_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- 共有インテント時に、元のアプリの上へ重ねて表示するポップアップ用テーマ。
+         背景は透明にし、Compose 側でダイアログとして描画する。 -->
+    <style name="Theme.Nexus.Popup" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="nexus_window_background">#101014</color>
+    <!-- 進行状況通知（リッチ オンゴーイング通知）のアクセント色。 -->
+    <color name="nexus_progress_accent">#4FA3FF</color>
+</resources>
