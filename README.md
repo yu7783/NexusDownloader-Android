@@ -1,7 +1,7 @@
 # Nexus Downloader — Android (Kotlin / Jetpack Compose)
 
-Python 版 **Nexus Downloader**（PyQt6 + PyQt-Fluent-Widgets）を Android ネイティブへ移植し、
-UI を **Material 3 / Jetpack Compose** でモダンに再設計したものです。
+Python 版 **[Nexus Downloader](https://github.com/yu7783/NexusDownloader)**（PyQt6 + PyQt-Fluent-Widgets）を
+Android ネイティブへ移植し、UI を **Material 3 / Jetpack Compose** でモダンに再設計したものです。
 
 ## 技術スタック
 
@@ -154,8 +154,8 @@ Android 10 以降は共有ストレージ（例: 内部ストレージ/Download�
 
 ## ビルド方法
 
-Android Studio（推奨）で `android/` フォルダを開くと、必要な SDK / Gradle Wrapper が
-自動で整い、そのままビルドできます。
+Android Studio（推奨）でこのリポジトリのルート（Android プロジェクト）を開くと、
+必要な SDK / Gradle Wrapper が自動で整い、そのままビルドできます。
 
 ### コマンドライン（検証済み）
 
@@ -168,11 +168,10 @@ $env:JAVA_HOME   = 'C:\Program Files\Android\Android Studio\jbr'   # ★JDK 17�
 $env:ANDROID_HOME = "$env:LOCALAPPDATA\Android\Sdk"
 $env:ANDROID_SDK_ROOT = $env:ANDROID_HOME
 
-cd android
 .\gradlew.bat :app:assembleDebug
 ```
 
-生成物: `android/app/build/outputs/apk/debug/app-debug.apk`
+生成物: `app/build/outputs/apk/debug/app-debug.apk`
 
 > ⚠️ **JDK 22 以降ではビルドできません。** Kotlin 2.0 系のプラグインが
 > JVM バージョン 22 以降を解釈できず（`IllegalArgumentException: 25.0.3` など）、

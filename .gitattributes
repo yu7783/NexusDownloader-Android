@@ -1,0 +1,6 @@
+# 改行コードの統一（Windows / Linux / CI でのビルド差異を防ぐ）
+* text=auto
+gradlew text eol=lf
+*.bat text eol=crlf
+*.jar binary
+*.png binary
